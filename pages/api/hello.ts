@@ -10,6 +10,6 @@ export default function handler(
   req: NextApiRequest,
   res: NextApiResponse<Data>
 ) {
-  const jjj = JSON.parse(readFileSync("./test.json").toString())
+  const jjj = JSON.parse(readFileSync("./tmp/test.json").toString())
   res.status(200).json(jjj)
 }

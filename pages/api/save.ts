@@ -10,6 +10,6 @@ export default function handler(
     req: NextApiRequest,
     res: NextApiResponse<Data>
 ) {
-    writeFileSync("./test.json", JSON.stringify({ name: "Fay" }))
+    writeFileSync("./tmp/test.json", JSON.stringify({ name: "Fay" }))
     res.status(200).json({ name: 'Done' })
 }
